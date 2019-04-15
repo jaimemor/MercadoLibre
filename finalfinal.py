@@ -31,10 +31,3 @@ dir = os.path.dirname(os.path.abspath(__file__)) + '/data'
 file_name = "datos.json"
 with open(os.path.join(dir, file_name), 'w') as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
-
-data = {}
-data['Productos'] = []
-
-
-
-    

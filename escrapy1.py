@@ -28,6 +28,7 @@ cuo= soup.find_all('div',class_='stack_column_item installments highlighted')
 for cuotas in cuo:
         print(cuotas.text)
         pass 
+        
         data['Productos'].append({
         'pagina': soup.title.string,
         'nombres':  nombres.text,
@@ -44,8 +45,7 @@ file_name = "datos.json"
 with open(os.path.join(dir, file_name), 'w') as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
 
-data = {}
-data['Productos'] = []
+
 
 
 
